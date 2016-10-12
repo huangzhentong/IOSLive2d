@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		631A17D91DADD40E00417C52 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 631A17D81DADD40E00417C52 /* AVFoundation.framework */; };
+		631A17DB1DADD43200417C52 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 631A17DA1DADD43200417C52 /* OpenGLES.framework */; };
+		631A17DD1DADD4B500417C52 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 631A17DC1DADD4B500417C52 /* QuartzCore.framework */; };
+		631A17DF1DADD4CB00417C52 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 631A17DE1DADD4CB00417C52 /* CoreGraphics.framework */; };
+		631A18261DADD5FA00417C52 /* L2DBaseModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 631A17F01DADD5FA00417C52 /* L2DBaseModel.cpp */; };
+		631A18271DADD5FA00417C52 /* L2DExpressionMotion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 631A17F21DADD5FA00417C52 /* L2DExpressionMotion.cpp */; };
+		631A18281DADD5FA00417C52 /* L2DEyeBlink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 631A17F41DADD5FA00417C52 /* L2DEyeBlink.cpp */; };
+		631A18291DADD5FA00417C52 /* L2DMatrix44.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 631A17F61DADD5FA00417C52 /* L2DMatrix44.cpp */; };
+		631A182A1DADD5FA00417C52 /* L2DModelMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 631A17F81DADD5FA00417C52 /* L2DModelMatrix.cpp */; };
+		631A182B1DADD5FA00417C52 /* L2DMotionManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 631A17FA1DADD5FA00417C52 /* L2DMotionManager.cpp */; };
+		631A182C1DADD5FA00417C52 /* L2DPhysics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 631A17FC1DADD5FA00417C52 /* L2DPhysics.cpp */; };
+		631A182D1DADD5FA00417C52 /* L2DPose.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 631A17FE1DADD5FA00417C52 /* L2DPose.cpp */; };
+		631A182E1DADD5FA00417C52 /* L2DTargetPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 631A18011DADD5FA00417C52 /* L2DTargetPoint.cpp */; };
+		631A182F1DADD5FA00417C52 /* L2DTextureDesc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 631A18031DADD5FA00417C52 /* L2DTextureDesc.cpp */; };
+		631A18301DADD5FA00417C52 /* L2DViewMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 631A18051DADD5FA00417C52 /* L2DViewMatrix.cpp */; };
+		631A18311DADD5FA00417C52 /* Live2DFramework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 631A18071DADD5FA00417C52 /* Live2DFramework.cpp */; };
+		631A18321DADD5FA00417C52 /* LAppLive2DManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 631A180C1DADD5FA00417C52 /* LAppLive2DManager.mm */; };
+		631A18331DADD5FA00417C52 /* LAppModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 631A180E1DADD5FA00417C52 /* LAppModel.mm */; };
+		631A18341DADD5FA00417C52 /* LAppRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 631A18101DADD5FA00417C52 /* LAppRenderer.mm */; };
+		631A18351DADD5FA00417C52 /* LAppTextureDesc.mm in Sources */ = {isa = PBXBuildFile; fileRef = 631A18121DADD5FA00417C52 /* LAppTextureDesc.mm */; };
+		631A18361DADD5FA00417C52 /* LAppView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 631A18141DADD5FA00417C52 /* LAppView.mm */; };
+		631A18371DADD5FA00417C52 /* AccelHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 631A18171DADD5FA00417C52 /* AccelHelper.mm */; };
+		631A18381DADD5FA00417C52 /* FileManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 631A18191DADD5FA00417C52 /* FileManager.mm */; };
+		631A18391DADD5FA00417C52 /* IPhoneUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 631A181B1DADD5FA00417C52 /* IPhoneUtil.mm */; };
+		631A183A1DADD5FA00417C52 /* OffScreenImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 631A181F1DADD5FA00417C52 /* OffScreenImage.mm */; };
+		631A183B1DADD5FA00417C52 /* PlatformManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 631A18211DADD5FA00417C52 /* PlatformManager.mm */; };
+		631A183C1DADD5FA00417C52 /* SimpleImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 631A18231DADD5FA00417C52 /* SimpleImage.mm */; };
+		631A183D1DADD5FA00417C52 /* TouchManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 631A18251DADD5FA00417C52 /* TouchManager.mm */; };
+		631A18DF1DADD65B00417C52 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 631A183F1DADD65B00417C52 /* Default-568h@2x.png */; };
+		631A18E01DADD65B00417C52 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 631A18401DADD65B00417C52 /* Default-Landscape.png */; };
+		631A18E11DADD65B00417C52 /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 631A18411DADD65B00417C52 /* Default-Landscape@2x.png */; };
+		631A18E21DADD65B00417C52 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 631A18421DADD65B00417C52 /* Default-Portrait.png */; };
+		631A18E31DADD65B00417C52 /* Default-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 631A18431DADD65B00417C52 /* Default-Portrait@2x.png */; };
+		631A18E41DADD65B00417C52 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 631A18441DADD65B00417C52 /* Default.png */; };
+		631A18E51DADD65B00417C52 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 631A18451DADD65B00417C52 /* Default@2x.png */; };
+		631A18E61DADD65B00417C52 /* back_class_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 631A18471DADD65B00417C52 /* back_class_normal.png */; };
+		631A18E71DADD65B00417C52 /* icon_gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 631A18481DADD65B00417C52 /* icon_gear.png */; };
+		631A195B1DADD67400417C52 /* live2d in Resources */ = {isa = PBXBuildFile; fileRef = 631A195A1DADD67400417C52 /* live2d */; };
+		633573551DACC01400ADC2B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 633573541DACC01400ADC2B5 /* main.m */; };
+		633573581DACC01400ADC2B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 633573571DACC01400ADC2B5 /* AppDelegate.m */; };
+		6335735E1DACC01400ADC2B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6335735C1DACC01400ADC2B5 /* Main.storyboard */; };
+		633573601DACC01400ADC2B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6335735F1DACC01400ADC2B5 /* Assets.xcassets */; };
+		633573631DACC01400ADC2B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633573611DACC01400ADC2B5 /* LaunchScreen.storyboard */; };
+		6335736E1DACC01400ADC2B5 /* IOSLive2dTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6335736D1DACC01400ADC2B5 /* IOSLive2dTests.m */; };
+		633573791DACC01400ADC2B5 /* IOSLive2dUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 633573781DACC01400ADC2B5 /* IOSLive2dUITests.m */; };
+		633573881DACC10200ADC2B5 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 633573871DACC10200ADC2B5 /* ViewController.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6335736A1DACC01400ADC2B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 633573481DACC01300ADC2B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6335734F1DACC01400ADC2B5;
+			remoteInfo = IOSLive2d;
+		};
+		633573751DACC01400ADC2B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 633573481DACC01300ADC2B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6335734F1DACC01400ADC2B5;
+			remoteInfo = IOSLive2d;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		631A17D81DADD40E00417C52 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		631A17DA1DADD43200417C52 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		631A17DC1DADD4B500417C52 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		631A17DE1DADD4CB00417C52 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		631A17EF1DADD5FA00417C52 /* IPlatformManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPlatformManager.h; sourceTree = "<group>"; };
+		631A17F01DADD5FA00417C52 /* L2DBaseModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DBaseModel.cpp; sourceTree = "<group>"; };
+		631A17F11DADD5FA00417C52 /* L2DBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DBaseModel.h; sourceTree = "<group>"; };
+		631A17F21DADD5FA00417C52 /* L2DExpressionMotion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DExpressionMotion.cpp; sourceTree = "<group>"; };
+		631A17F31DADD5FA00417C52 /* L2DExpressionMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DExpressionMotion.h; sourceTree = "<group>"; };
+		631A17F41DADD5FA00417C52 /* L2DEyeBlink.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DEyeBlink.cpp; sourceTree = "<group>"; };
+		631A17F51DADD5FA00417C52 /* L2DEyeBlink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DEyeBlink.h; sourceTree = "<group>"; };
+		631A17F61DADD5FA00417C52 /* L2DMatrix44.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DMatrix44.cpp; sourceTree = "<group>"; };
+		631A17F71DADD5FA00417C52 /* L2DMatrix44.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DMatrix44.h; sourceTree = "<group>"; };
+		631A17F81DADD5FA00417C52 /* L2DModelMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DModelMatrix.cpp; sourceTree = "<group>"; };
+		631A17F91DADD5FA00417C52 /* L2DModelMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DModelMatrix.h; sourceTree = "<group>"; };
+		631A17FA1DADD5FA00417C52 /* L2DMotionManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DMotionManager.cpp; sourceTree = "<group>"; };
+		631A17FB1DADD5FA00417C52 /* L2DMotionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DMotionManager.h; sourceTree = "<group>"; };
+		631A17FC1DADD5FA00417C52 /* L2DPhysics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DPhysics.cpp; sourceTree = "<group>"; };
+		631A17FD1DADD5FA00417C52 /* L2DPhysics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DPhysics.h; sourceTree = "<group>"; };
+		631A17FE1DADD5FA00417C52 /* L2DPose.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DPose.cpp; sourceTree = "<group>"; };
+		631A17FF1DADD5FA00417C52 /* L2DPose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DPose.h; sourceTree = "<group>"; };
+		631A18001DADD5FA00417C52 /* L2DStandardID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DStandardID.h; sourceTree = "<group>"; };
+		631A18011DADD5FA00417C52 /* L2DTargetPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DTargetPoint.cpp; sourceTree = "<group>"; };
+		631A18021DADD5FA00417C52 /* L2DTargetPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DTargetPoint.h; sourceTree = "<group>"; };
+		631A18031DADD5FA00417C52 /* L2DTextureDesc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DTextureDesc.cpp; sourceTree = "<group>"; };
+		631A18041DADD5FA00417C52 /* L2DTextureDesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DTextureDesc.h; sourceTree = "<group>"; };
+		631A18051DADD5FA00417C52 /* L2DViewMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = L2DViewMatrix.cpp; sourceTree = "<group>"; };
+		631A18061DADD5FA00417C52 /* L2DViewMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2DViewMatrix.h; sourceTree = "<group>"; };
+		631A18071DADD5FA00417C52 /* Live2DFramework.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Live2DFramework.cpp; sourceTree = "<group>"; };
+		631A18081DADD5FA00417C52 /* Live2DFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Live2DFramework.h; sourceTree = "<group>"; };
+		631A180A1DADD5FA00417C52 /* LAppDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAppDefine.h; sourceTree = "<group>"; };
+		631A180B1DADD5FA00417C52 /* LAppLive2DManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAppLive2DManager.h; sourceTree = "<group>"; };
+		631A180C1DADD5FA00417C52 /* LAppLive2DManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LAppLive2DManager.mm; sourceTree = "<group>"; };
+		631A180D1DADD5FA00417C52 /* LAppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAppModel.h; sourceTree = "<group>"; };
+		631A180E1DADD5FA00417C52 /* LAppModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LAppModel.mm; sourceTree = "<group>"; };
+		631A180F1DADD5FA00417C52 /* LAppRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAppRenderer.h; sourceTree = "<group>"; };
+		631A18101DADD5FA00417C52 /* LAppRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LAppRenderer.mm; sourceTree = "<group>"; };
+		631A18111DADD5FA00417C52 /* LAppTextureDesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAppTextureDesc.h; sourceTree = "<group>"; };
+		631A18121DADD5FA00417C52 /* LAppTextureDesc.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LAppTextureDesc.mm; sourceTree = "<group>"; };
+		631A18131DADD5FA00417C52 /* LAppView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAppView.h; sourceTree = "<group>"; };
+		631A18141DADD5FA00417C52 /* LAppView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LAppView.mm; sourceTree = "<group>"; };
+		631A18161DADD5FA00417C52 /* AccelHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelHelper.h; sourceTree = "<group>"; };
+		631A18171DADD5FA00417C52 /* AccelHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AccelHelper.mm; sourceTree = "<group>"; };
+		631A18181DADD5FA00417C52 /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		631A18191DADD5FA00417C52 /* FileManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FileManager.mm; sourceTree = "<group>"; };
+		631A181A1DADD5FA00417C52 /* IPhoneUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPhoneUtil.h; sourceTree = "<group>"; };
+		631A181B1DADD5FA00417C52 /* IPhoneUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IPhoneUtil.mm; sourceTree = "<group>"; };
+		631A181C1DADD5FA00417C52 /* ModelSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelSetting.h; sourceTree = "<group>"; };
+		631A181D1DADD5FA00417C52 /* ModelSettingJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelSettingJson.h; sourceTree = "<group>"; };
+		631A181E1DADD5FA00417C52 /* OffScreenImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OffScreenImage.h; sourceTree = "<group>"; };
+		631A181F1DADD5FA00417C52 /* OffScreenImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OffScreenImage.mm; sourceTree = "<group>"; };
+		631A18201DADD5FA00417C52 /* PlatformManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformManager.h; sourceTree = "<group>"; };
+		631A18211DADD5FA00417C52 /* PlatformManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PlatformManager.mm; sourceTree = "<group>"; };
+		631A18221DADD5FA00417C52 /* SimpleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleImage.h; sourceTree = "<group>"; };
+		631A18231DADD5FA00417C52 /* SimpleImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SimpleImage.mm; sourceTree = "<group>"; };
+		631A18241DADD5FA00417C52 /* TouchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchManager.h; sourceTree = "<group>"; };
+		631A18251DADD5FA00417C52 /* TouchManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TouchManager.mm; sourceTree = "<group>"; };
+		631A183F1DADD65B00417C52 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		631A18401DADD65B00417C52 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
+		631A18411DADD65B00417C52 /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x.png"; sourceTree = "<group>"; };
+		631A18421DADD65B00417C52 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
+		631A18431DADD65B00417C52 /* Default-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x.png"; sourceTree = "<group>"; };
+		631A18441DADD65B00417C52 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		631A18451DADD65B00417C52 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		631A18471DADD65B00417C52 /* back_class_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_class_normal.png; sourceTree = "<group>"; };
+		631A18481DADD65B00417C52 /* icon_gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_gear.png; sourceTree = "<group>"; };
+		631A195A1DADD67400417C52 /* live2d */ = {isa = PBXFileReference; lastKnownFileType = folder; path = live2d; sourceTree = "<group>"; };
+		633573501DACC01400ADC2B5 /* IOSLive2d.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSLive2d.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		633573541DACC01400ADC2B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		633573561DACC01400ADC2B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		633573571DACC01400ADC2B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6335735D1DACC01400ADC2B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6335735F1DACC01400ADC2B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		633573621DACC01400ADC2B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		633573641DACC01400ADC2B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		633573691DACC01400ADC2B5 /* IOSLive2dTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSLive2dTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6335736D1DACC01400ADC2B5 /* IOSLive2dTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSLive2dTests.m; sourceTree = "<group>"; };
+		6335736F1DACC01400ADC2B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		633573741DACC01400ADC2B5 /* IOSLive2dUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSLive2dUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		633573781DACC01400ADC2B5 /* IOSLive2dUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSLive2dUITests.m; sourceTree = "<group>"; };
+		6335737A1DACC01400ADC2B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		633573861DACC10200ADC2B5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		633573871DACC10200ADC2B5 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6335734D1DACC01400ADC2B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				631A17DF1DADD4CB00417C52 /* CoreGraphics.framework in Frameworks */,
+				631A17DD1DADD4B500417C52 /* QuartzCore.framework in Frameworks */,
+				631A17DB1DADD43200417C52 /* OpenGLES.framework in Frameworks */,
+				631A17D91DADD40E00417C52 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633573661DACC01400ADC2B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633573711DACC01400ADC2B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		631A17D71DADD40E00417C52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				631A17DE1DADD4CB00417C52 /* CoreGraphics.framework */,
+				631A17DC1DADD4B500417C52 /* QuartzCore.framework */,
+				631A17DA1DADD43200417C52 /* OpenGLES.framework */,
+				631A17D81DADD40E00417C52 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		631A17EE1DADD5FA00417C52 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				631A17EF1DADD5FA00417C52 /* IPlatformManager.h */,
+				631A17F01DADD5FA00417C52 /* L2DBaseModel.cpp */,
+				631A17F11DADD5FA00417C52 /* L2DBaseModel.h */,
+				631A17F21DADD5FA00417C52 /* L2DExpressionMotion.cpp */,
+				631A17F31DADD5FA00417C52 /* L2DExpressionMotion.h */,
+				631A17F41DADD5FA00417C52 /* L2DEyeBlink.cpp */,
+				631A17F51DADD5FA00417C52 /* L2DEyeBlink.h */,
+				631A17F61DADD5FA00417C52 /* L2DMatrix44.cpp */,
+				631A17F71DADD5FA00417C52 /* L2DMatrix44.h */,
+				631A17F81DADD5FA00417C52 /* L2DModelMatrix.cpp */,
+				631A17F91DADD5FA00417C52 /* L2DModelMatrix.h */,
+				631A17FA1DADD5FA00417C52 /* L2DMotionManager.cpp */,
+				631A17FB1DADD5FA00417C52 /* L2DMotionManager.h */,
+				631A17FC1DADD5FA00417C52 /* L2DPhysics.cpp */,
+				631A17FD1DADD5FA00417C52 /* L2DPhysics.h */,
+				631A17FE1DADD5FA00417C52 /* L2DPose.cpp */,
+				631A17FF1DADD5FA00417C52 /* L2DPose.h */,
+				631A18001DADD5FA00417C52 /* L2DStandardID.h */,
+				631A18011DADD5FA00417C52 /* L2DTargetPoint.cpp */,
+				631A18021DADD5FA00417C52 /* L2DTargetPoint.h */,
+				631A18031DADD5FA00417C52 /* L2DTextureDesc.cpp */,
+				631A18041DADD5FA00417C52 /* L2DTextureDesc.h */,
+				631A18051DADD5FA00417C52 /* L2DViewMatrix.cpp */,
+				631A18061DADD5FA00417C52 /* L2DViewMatrix.h */,
+				631A18071DADD5FA00417C52 /* Live2DFramework.cpp */,
+				631A18081DADD5FA00417C52 /* Live2DFramework.h */,
+			);
+			name = framework;
+			path = ../../framework;
+			sourceTree = "<group>";
+		};
+		631A18091DADD5FA00417C52 /* smaple */ = {
+			isa = PBXGroup;
+			children = (
+				631A180A1DADD5FA00417C52 /* LAppDefine.h */,
+				631A180B1DADD5FA00417C52 /* LAppLive2DManager.h */,
+				631A180C1DADD5FA00417C52 /* LAppLive2DManager.mm */,
+				631A180D1DADD5FA00417C52 /* LAppModel.h */,
+				631A180E1DADD5FA00417C52 /* LAppModel.mm */,
+				631A180F1DADD5FA00417C52 /* LAppRenderer.h */,
+				631A18101DADD5FA00417C52 /* LAppRenderer.mm */,
+				631A18111DADD5FA00417C52 /* LAppTextureDesc.h */,
+				631A18121DADD5FA00417C52 /* LAppTextureDesc.mm */,
+				631A18131DADD5FA00417C52 /* LAppView.h */,
+				631A18141DADD5FA00417C52 /* LAppView.mm */,
+			);
+			name = smaple;
+			path = ../../smaple;
+			sourceTree = "<group>";
+		};
+		631A18151DADD5FA00417C52 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				631A18161DADD5FA00417C52 /* AccelHelper.h */,
+				631A18171DADD5FA00417C52 /* AccelHelper.mm */,
+				631A18181DADD5FA00417C52 /* FileManager.h */,
+				631A18191DADD5FA00417C52 /* FileManager.mm */,
+				631A181A1DADD5FA00417C52 /* IPhoneUtil.h */,
+				631A181B1DADD5FA00417C52 /* IPhoneUtil.mm */,
+				631A181C1DADD5FA00417C52 /* ModelSetting.h */,
+				631A181D1DADD5FA00417C52 /* ModelSettingJson.h */,
+				631A181E1DADD5FA00417C52 /* OffScreenImage.h */,
+				631A181F1DADD5FA00417C52 /* OffScreenImage.mm */,
+				631A18201DADD5FA00417C52 /* PlatformManager.h */,
+				631A18211DADD5FA00417C52 /* PlatformManager.mm */,
+				631A18221DADD5FA00417C52 /* SimpleImage.h */,
+				631A18231DADD5FA00417C52 /* SimpleImage.mm */,
+				631A18241DADD5FA00417C52 /* TouchManager.h */,
+				631A18251DADD5FA00417C52 /* TouchManager.mm */,
+			);
+			name = utils;
+			path = ../../utils;
+			sourceTree = "<group>";
+		};
+		631A183E1DADD65B00417C52 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				631A195A1DADD67400417C52 /* live2d */,
+				631A183F1DADD65B00417C52 /* Default-568h@2x.png */,
+				631A18401DADD65B00417C52 /* Default-Landscape.png */,
+				631A18411DADD65B00417C52 /* Default-Landscape@2x.png */,
+				631A18421DADD65B00417C52 /* Default-Portrait.png */,
+				631A18431DADD65B00417C52 /* Default-Portrait@2x.png */,
+				631A18441DADD65B00417C52 /* Default.png */,
+				631A18451DADD65B00417C52 /* Default@2x.png */,
+				631A18461DADD65B00417C52 /* image */,
+			);
+			name = res;
+			path = ../../res;
+			sourceTree = "<group>";
+		};
+		631A18461DADD65B00417C52 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				631A18471DADD65B00417C52 /* back_class_normal.png */,
+				631A18481DADD65B00417C52 /* icon_gear.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		633573471DACC01300ADC2B5 = {
+			isa = PBXGroup;
+			children = (
+				633573521DACC01400ADC2B5 /* IOSLive2d */,
+				6335736C1DACC01400ADC2B5 /* IOSLive2dTests */,
+				633573771DACC01400ADC2B5 /* IOSLive2dUITests */,
+				633573511DACC01400ADC2B5 /* Products */,
+				631A17D71DADD40E00417C52 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		633573511DACC01400ADC2B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				633573501DACC01400ADC2B5 /* IOSLive2d.app */,
+				633573691DACC01400ADC2B5 /* IOSLive2dTests.xctest */,
+				633573741DACC01400ADC2B5 /* IOSLive2dUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		633573521DACC01400ADC2B5 /* IOSLive2d */ = {
+			isa = PBXGroup;
+			children = (
+				631A183E1DADD65B00417C52 /* res */,
+				631A17EE1DADD5FA00417C52 /* framework */,
+				631A18091DADD5FA00417C52 /* smaple */,
+				631A18151DADD5FA00417C52 /* utils */,
+				633573561DACC01400ADC2B5 /* AppDelegate.h */,
+				633573571DACC01400ADC2B5 /* AppDelegate.m */,
+				633573861DACC10200ADC2B5 /* ViewController.h */,
+				633573871DACC10200ADC2B5 /* ViewController.mm */,
+				6335735C1DACC01400ADC2B5 /* Main.storyboard */,
+				6335735F1DACC01400ADC2B5 /* Assets.xcassets */,
+				633573611DACC01400ADC2B5 /* LaunchScreen.storyboard */,
+				633573641DACC01400ADC2B5 /* Info.plist */,
+				633573531DACC01400ADC2B5 /* Supporting Files */,
+			);
+			path = IOSLive2d;
+			sourceTree = "<group>";
+		};
+		633573531DACC01400ADC2B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				633573541DACC01400ADC2B5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6335736C1DACC01400ADC2B5 /* IOSLive2dTests */ = {
+			isa = PBXGroup;
+			children = (
+				6335736D1DACC01400ADC2B5 /* IOSLive2dTests.m */,
+				6335736F1DACC01400ADC2B5 /* Info.plist */,
+			);
+			path = IOSLive2dTests;
+			sourceTree = "<group>";
+		};
+		633573771DACC01400ADC2B5 /* IOSLive2dUITests */ = {
+			isa = PBXGroup;
+			children = (
+				633573781DACC01400ADC2B5 /* IOSLive2dUITests.m */,
+				6335737A1DACC01400ADC2B5 /* Info.plist */,
+			);
+			path = IOSLive2dUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6335734F1DACC01400ADC2B5 /* IOSLive2d */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6335737D1DACC01400ADC2B5 /* Build configuration list for PBXNativeTarget "IOSLive2d" */;
+			buildPhases = (
+				6335734C1DACC01400ADC2B5 /* Sources */,
+				6335734D1DACC01400ADC2B5 /* Frameworks */,
+				6335734E1DACC01400ADC2B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IOSLive2d;
+			productName = IOSLive2d;
+			productReference = 633573501DACC01400ADC2B5 /* IOSLive2d.app */;
+			productType = "com.apple.product-type.application";
+		};
+		633573681DACC01400ADC2B5 /* IOSLive2dTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 633573801DACC01400ADC2B5 /* Build configuration list for PBXNativeTarget "IOSLive2dTests" */;
+			buildPhases = (
+				633573651DACC01400ADC2B5 /* Sources */,
+				633573661DACC01400ADC2B5 /* Frameworks */,
+				633573671DACC01400ADC2B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6335736B1DACC01400ADC2B5 /* PBXTargetDependency */,
+			);
+			name = IOSLive2dTests;
+			productName = IOSLive2dTests;
+			productReference = 633573691DACC01400ADC2B5 /* IOSLive2dTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		633573731DACC01400ADC2B5 /* IOSLive2dUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 633573831DACC01400ADC2B5 /* Build configuration list for PBXNativeTarget "IOSLive2dUITests" */;
+			buildPhases = (
+				633573701DACC01400ADC2B5 /* Sources */,
+				633573711DACC01400ADC2B5 /* Frameworks */,
+				633573721DACC01400ADC2B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				633573761DACC01400ADC2B5 /* PBXTargetDependency */,
+			);
+			name = IOSLive2dUITests;
+			productName = IOSLive2dUITests;
+			productReference = 633573741DACC01400ADC2B5 /* IOSLive2dUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		633573481DACC01300ADC2B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = huang;
+				TargetAttributes = {
+					6335734F1DACC01400ADC2B5 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = MJ83SS55X3;
+						ProvisioningStyle = Automatic;
+					};
+					633573681DACC01400ADC2B5 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6335734F1DACC01400ADC2B5;
+					};
+					633573731DACC01400ADC2B5 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6335734F1DACC01400ADC2B5;
+					};
+				};
+			};
+			buildConfigurationList = 6335734B1DACC01300ADC2B5 /* Build configuration list for PBXProject "IOSLive2d" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 633573471DACC01300ADC2B5;
+			productRefGroup = 633573511DACC01400ADC2B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6335734F1DACC01400ADC2B5 /* IOSLive2d */,
+				633573681DACC01400ADC2B5 /* IOSLive2dTests */,
+				633573731DACC01400ADC2B5 /* IOSLive2dUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6335734E1DACC01400ADC2B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				631A195B1DADD67400417C52 /* live2d in Resources */,
+				631A18E61DADD65B00417C52 /* back_class_normal.png in Resources */,
+				633573631DACC01400ADC2B5 /* LaunchScreen.storyboard in Resources */,
+				631A18E41DADD65B00417C52 /* Default.png in Resources */,
+				631A18E71DADD65B00417C52 /* icon_gear.png in Resources */,
+				631A18E51DADD65B00417C52 /* Default@2x.png in Resources */,
+				631A18DF1DADD65B00417C52 /* Default-568h@2x.png in Resources */,
+				633573601DACC01400ADC2B5 /* Assets.xcassets in Resources */,
+				631A18E31DADD65B00417C52 /* Default-Portrait@2x.png in Resources */,
+				631A18E01DADD65B00417C52 /* Default-Landscape.png in Resources */,
+				631A18E11DADD65B00417C52 /* Default-Landscape@2x.png in Resources */,
+				6335735E1DACC01400ADC2B5 /* Main.storyboard in Resources */,
+				631A18E21DADD65B00417C52 /* Default-Portrait.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633573671DACC01400ADC2B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633573721DACC01400ADC2B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6335734C1DACC01400ADC2B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633573581DACC01400ADC2B5 /* AppDelegate.m in Sources */,
+				631A18381DADD5FA00417C52 /* FileManager.mm in Sources */,
+				633573551DACC01400ADC2B5 /* main.m in Sources */,
+				631A182E1DADD5FA00417C52 /* L2DTargetPoint.cpp in Sources */,
+				631A18361DADD5FA00417C52 /* LAppView.mm in Sources */,
+				631A18311DADD5FA00417C52 /* Live2DFramework.cpp in Sources */,
+				631A18271DADD5FA00417C52 /* L2DExpressionMotion.cpp in Sources */,
+				631A183C1DADD5FA00417C52 /* SimpleImage.mm in Sources */,
+				631A18301DADD5FA00417C52 /* L2DViewMatrix.cpp in Sources */,
+				631A183B1DADD5FA00417C52 /* PlatformManager.mm in Sources */,
+				631A182B1DADD5FA00417C52 /* L2DMotionManager.cpp in Sources */,
+				631A18391DADD5FA00417C52 /* IPhoneUtil.mm in Sources */,
+				631A182A1DADD5FA00417C52 /* L2DModelMatrix.cpp in Sources */,
+				631A182D1DADD5FA00417C52 /* L2DPose.cpp in Sources */,
+				631A18341DADD5FA00417C52 /* LAppRenderer.mm in Sources */,
+				631A183D1DADD5FA00417C52 /* TouchManager.mm in Sources */,
+				631A18281DADD5FA00417C52 /* L2DEyeBlink.cpp in Sources */,
+				631A18331DADD5FA00417C52 /* LAppModel.mm in Sources */,
+				631A18321DADD5FA00417C52 /* LAppLive2DManager.mm in Sources */,
+				631A182C1DADD5FA00417C52 /* L2DPhysics.cpp in Sources */,
+				633573881DACC10200ADC2B5 /* ViewController.mm in Sources */,
+				631A18291DADD5FA00417C52 /* L2DMatrix44.cpp in Sources */,
+				631A18261DADD5FA00417C52 /* L2DBaseModel.cpp in Sources */,
+				631A18351DADD5FA00417C52 /* LAppTextureDesc.mm in Sources */,
+				631A182F1DADD5FA00417C52 /* L2DTextureDesc.cpp in Sources */,
+				631A18371DADD5FA00417C52 /* AccelHelper.mm in Sources */,
+				631A183A1DADD5FA00417C52 /* OffScreenImage.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633573651DACC01400ADC2B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6335736E1DACC01400ADC2B5 /* IOSLive2dTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633573701DACC01400ADC2B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633573791DACC01400ADC2B5 /* IOSLive2dUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6335736B1DACC01400ADC2B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6335734F1DACC01400ADC2B5 /* IOSLive2d */;
+			targetProxy = 6335736A1DACC01400ADC2B5 /* PBXContainerItemProxy */;
+		};
+		633573761DACC01400ADC2B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6335734F1DACC01400ADC2B5 /* IOSLive2d */;
+			targetProxy = 633573751DACC01400ADC2B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6335735C1DACC01400ADC2B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6335735D1DACC01400ADC2B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		633573611DACC01400ADC2B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				633573621DACC01400ADC2B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6335737B1DACC01400ADC2B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6335737C1DACC01400ADC2B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6335737E1DACC01400ADC2B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = MJ83SS55X3;
+				GCC_PREPROCESSOR_DEFINITIONS = L2D_TARGET_IPHONE;
+				INFOPLIST_FILE = IOSLive2d/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../lib/$(CONFIGURATION)-$(PLATFORM_NAME)";
+				OTHER_LDFLAGS = "-lLive2D";
+				PRODUCT_BUNDLE_IDENTIFIER = huang.IOSLive2d;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../include";
+			};
+			name = Debug;
+		};
+		6335737F1DACC01400ADC2B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = MJ83SS55X3;
+				GCC_PREPROCESSOR_DEFINITIONS = L2D_TARGET_IPHONE;
+				INFOPLIST_FILE = IOSLive2d/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../lib/$(CONFIGURATION)-$(PLATFORM_NAME)";
+				OTHER_LDFLAGS = "-lLive2D";
+				PRODUCT_BUNDLE_IDENTIFIER = huang.IOSLive2d;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../include";
+			};
+			name = Release;
+		};
+		633573811DACC01400ADC2B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = IOSLive2dTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = huang.IOSLive2dTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOSLive2d.app/IOSLive2d";
+			};
+			name = Debug;
+		};
+		633573821DACC01400ADC2B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = IOSLive2dTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = huang.IOSLive2dTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOSLive2d.app/IOSLive2d";
+			};
+			name = Release;
+		};
+		633573841DACC01400ADC2B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = IOSLive2dUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = huang.IOSLive2dUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = IOSLive2d;
+			};
+			name = Debug;
+		};
+		633573851DACC01400ADC2B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = IOSLive2dUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = huang.IOSLive2dUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = IOSLive2d;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6335734B1DACC01300ADC2B5 /* Build configuration list for PBXProject "IOSLive2d" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6335737B1DACC01400ADC2B5 /* Debug */,
+				6335737C1DACC01400ADC2B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6335737D1DACC01400ADC2B5 /* Build configuration list for PBXNativeTarget "IOSLive2d" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6335737E1DACC01400ADC2B5 /* Debug */,
+				6335737F1DACC01400ADC2B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		633573801DACC01400ADC2B5 /* Build configuration list for PBXNativeTarget "IOSLive2dTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633573811DACC01400ADC2B5 /* Debug */,
+				633573821DACC01400ADC2B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		633573831DACC01400ADC2B5 /* Build configuration list for PBXNativeTarget "IOSLive2dUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633573841DACC01400ADC2B5 /* Debug */,
+				633573851DACC01400ADC2B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 633573481DACC01300ADC2B5 /* Project object */;
+}
